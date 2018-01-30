@@ -1,0 +1,24 @@
+{
+    "name": "csun-metalab/laravel-force-https",
+    "description": "A small Composer package for Laravel 5.0 and above to force HTTPS in the URL",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthew Fritz",
+            "email": "mattf@burbankparanormal.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": [
+            "src/ForceHttps/"
+        ],
+        "psr-4": {
+            "CSUNMetaLab\\ForceHttps\\": "src/ForceHttps/"
+        }
+    }
+}
