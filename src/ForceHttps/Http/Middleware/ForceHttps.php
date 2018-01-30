@@ -20,9 +20,13 @@ class ForceHttps
         if(config('forcehttps.force_https')) {
             // check how the absolute URL in the request looks
             $url = strtolower(url($request->server("REQUEST_URI")));
-            if(starts_with($url, 'http:')) {
-                // replace the protocol and then return a redirect
-                return redirect(str_replace("http:", "https:", $url));
+            $https = $request->server("HTTPS");
+            if(empty($https) || strtolower($https) == "off") {
+                // take SSL termination behind a proxy into account
+                if(!starts_with($url, 'https:')) {
+                    // replace the protocol and then return a redirect
+                    return redirect(str_replace("http:", "https:", $url));
+                }
             }
         }
         

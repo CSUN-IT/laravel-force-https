@@ -102,7 +102,8 @@ The middleware performs the following steps:
 1. Checks to see if the application configuration requests traffic to be forced over HTTPS
 2. If so, it performs the following steps:
     1. Resolves the request URI as an absolute URL so it can also see the protocol
-    2. If the protocol is `http:` then it replaces it with `https:` and returns a redirect
+    2. Checks to see if the `HTTPS` server variable is a non-empty value or set as `off`
+    2. If the protocol isn't already `https:` then it replaces it with `https:` and returns a redirect
 3. If not, it passes the request instance to the next configured middleware in the pipeline
 
 ## Resources
