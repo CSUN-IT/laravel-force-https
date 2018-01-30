@@ -85,7 +85,7 @@ The following assets are published:
 
 ## Required Environment Variables
 
-You added two environment variables to your `.env` file that control the sending of messages via email.
+You added an environment variable to your `.env` file that controls the protocol the application traffic uses.
 
 ### FORCE_HTTPS
 
