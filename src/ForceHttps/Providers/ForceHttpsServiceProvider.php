@@ -1,6 +1,6 @@
 <?php
 
-namespace CSUNMetaLab\Support\Providers;
+namespace CSUNMetaLab\ForceHttps\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

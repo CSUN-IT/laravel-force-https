@@ -9,10 +9,10 @@ A small Composer package for Laravel 5.0 and above to force HTTPS in the URL via
         * [Environment](#environment)
         * [Service Provider](#service-provider)
     * [Middleware Installation](#middleware-installation)
-        * [Force HTTPS Middleware](#force-https-middleware)
     * [Publish Everything](#publish-everything)
 * [Required Environment Variables](#required-environment-variables)
 * [Middleware](#middleware)
+    * [Force HTTPS Middleware](#force-https-middleware)
 * [Resources](#resources)
 
 ## Installation
